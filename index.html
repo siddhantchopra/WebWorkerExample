@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperCharged</title>
+   
+    <style type="text/css">
+    #input{
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+    }
+    #input + label {
+        display: inline-block;
+        background-color: #777;
+        font-family: sans-serif;
+        padding: 5px;
+        font-size: 2em;
+        color: #f3f3f3;
+    }
+    #input:focus+label {
+        outline: 5px solid teal;
+    }
+    </style>
+</head>
+<body>
+    <input type="file" accept="image/*" name="input" id="input">
+    <label for="input">Choose File</label>
+    <br><br>
+    <div>
+        <canvas id="preview"></canvas>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
